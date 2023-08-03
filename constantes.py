@@ -15,5 +15,5 @@ pygame.display.set_caption(TITULO_JOGO)
 FPS = 60
 clock = pygame.time.Clock()
 
-#CINZA = (255, 255, 255)
-CINZA = (3, 3, 3)
+CINZA = (255, 255, 255)
+#CINZA = (3, 3, 3)
