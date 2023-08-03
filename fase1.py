@@ -7,11 +7,11 @@ from plataforma import *
 from groups import *
 from funcoes import adicionar, gerar_texto
 
-#jogador = Jogador(30,420)
-jogador = Jogador(577,61)
+jogador = Jogador(30, 420, 1)
+#jogador = Jogador(577, 61, 1)
 jogador_group.add(jogador)
 
-objetivo = Objetivo(580, 100)
+objetivo = Objetivo(580, 100, 1)
 objetivo_group.add(objetivo)
 
 hud = Plataforma(0, 0, 640, 50, (25,25,25))
@@ -59,3 +59,5 @@ def fase1():
     gerar_texto("Level 1", "white", 251, 30)
     
     jogador_group.update()
+
+    return jogador.fase_atual

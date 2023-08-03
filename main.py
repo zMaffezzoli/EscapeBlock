@@ -1,17 +1,11 @@
 import pygame
 
-from constantes import *
-from funcoes import *
 from game import Game
 
-g = Game()
+GAME = Game()
 
-while g.run:
-    clock.tick(FPS)
+while GAME.run:
+    
+    GAME.update()
 
-    tela.fill("black")
-
-    g.fases()
-
-    sair()
-    pygame.display.flip()
+pygame.quit()

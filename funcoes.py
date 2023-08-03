@@ -1,13 +1,6 @@
 import pygame
 from constantes import tela
-from sys import exit
 
-def sair():
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            exit()
-            
 def adicionar(objetos, group):
     for x in objetos:
         group.add(x)
