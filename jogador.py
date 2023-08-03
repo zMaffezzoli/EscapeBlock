@@ -1,6 +1,7 @@
 import pygame
-from constantes import *
-from plataforma import plataforma_group
+
+from constantes import FASE
+from groups import *
 
 class Jogador(pygame.sprite.Sprite):
     def __init__(self, x, y):
@@ -31,8 +32,12 @@ class Jogador(pygame.sprite.Sprite):
         self.salvar_xy()
         teclas = pygame.key.get_pressed()
         self.mover(teclas)
+
         collided = pygame.sprite.spritecollide(self, plataforma_group, False)
         if collided:
             self.restaurar_xy()
 
-jogador_group = pygame.sprite.Group()
+        venceu = pygame.sprite.spritecollide(self, objetivo_group, True)
+        if venceu:
+            global FASE
+            FASE += 1

@@ -14,3 +14,8 @@ pygame.display.set_caption(TITULO_JOGO)
 #Definindo FPS do jogo
 FPS = 60
 clock = pygame.time.Clock()
+
+CINZA = (255, 255, 255)
+#CINZA = (4, 4, 4)
+
+FASE = 1
