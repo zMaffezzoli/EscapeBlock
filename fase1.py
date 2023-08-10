@@ -56,7 +56,7 @@ def fase1():
 
     objetivo_group.draw(tela)
 
-    gerar_texto("Level 1", "white", 251, 30)
+    gerar_texto("Level 1", "white", 251, 30, 20)
     
     jogador_group.update()
 

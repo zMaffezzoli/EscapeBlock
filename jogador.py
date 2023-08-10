@@ -11,14 +11,15 @@ class Jogador(pygame.sprite.Sprite):
         self.fase_atual = fase_atual
 
     def mover(self, pk):
-        if pk[pygame.K_a]:
-            self.rect.x -= 1
-        if pk[pygame.K_d]:
-            self.rect.x += 1
-        if pk[pygame.K_w]:
-            self.rect.y -= 1
-        if pk[pygame.K_s]:
-            self.rect.y += 1
+        if self.fase_atual != 2:
+            if pk[pygame.K_a]:
+                self.rect.x -= 1
+            if pk[pygame.K_d]:
+                self.rect.x += 1
+            if pk[pygame.K_w]:
+                self.rect.y -= 1
+            if pk[pygame.K_s]:
+                self.rect.y += 1
             
     def salvar_xy(self):
         self.antes_x = self.rect.x
