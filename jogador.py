@@ -39,4 +39,7 @@ class Jogador(pygame.sprite.Sprite):
 
         venceu = pygame.sprite.spritecollide(self, objetivo_group, True)
         if venceu:
+            plataforma_group.empty()
+            objetivo_group.empty()
+            jogador_group.empty()
             self.fase_atual += 1
