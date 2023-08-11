@@ -12,13 +12,13 @@ class Objetivo(pygame.sprite.Sprite):
 
     def mover(self, pk):
         if self.fase_atual == 2:
-            if pk[pygame.K_a]:
+            if pk[pygame.K_p]:
                 self.rect.x -= 1
-            if pk[pygame.K_d]:
+            if pk[pygame.K_g]:
                 self.rect.x += 1
-            if pk[pygame.K_w]:
+            if pk[pygame.K_n]:
                 self.rect.y -= 1
-            if pk[pygame.K_s]:
+            if pk[pygame.K_r]:
                 self.rect.y += 1
 
     def salvar_xy(self):

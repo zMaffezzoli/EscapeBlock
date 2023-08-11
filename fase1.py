@@ -15,9 +15,9 @@ objetivo = Objetivo(580, 100, 1)
 objetivo_group.add(objetivo)
 
 hud = Plataforma(0, 0, 640, 50, (25,25,25))
-plataforma_direita = Plataforma(-1, 0, 1, 480, CINZA)
-plataforma_baixo = Plataforma(0, 480, 640, 1, CINZA)
-plataforma_esquerda = Plataforma(640, 0, 1, 480, CINZA)
+plataforma_direita = Plataforma(-1, 0, 1, 480, PRETO)
+plataforma_baixo = Plataforma(0, 480, 640, 1, PRETO)
+plataforma_esquerda = Plataforma(640, 0, 1, 480, PRETO)
 l1 = Plataforma(240, 50, 10, 80, CINZA)
 l2 = Plataforma(380, 50, 10, 90, CINZA)
 l3 = Plataforma(300, 140, 170, 10, CINZA)
@@ -56,8 +56,10 @@ def fase1():
 
     objetivo_group.draw(tela)
 
-    gerar_texto("Level 1", "white", 251, 30, 20)
+    gerar_texto("Level 1", AMARELO, 251, 30, 20)
     
+    gerar_texto("Corra, mas não veja", BRANCO, 200, 10, 12)
+
     jogador_group.update()
 
     return jogador.fase_atual
