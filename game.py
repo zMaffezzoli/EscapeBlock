@@ -2,6 +2,7 @@ import pygame
 
 from fase1 import *
 from fase2 import *
+from fase3 import *
 
 class Game:
     def __init__(self):
@@ -11,15 +12,16 @@ class Game:
 
     def fases(self):
         if self.fase_atual == 1:
-            print("fase1")
             self.fase_atual = fase1()
         
         elif self.fase_atual == 2:
-            print('fase 2')
             self.fase_atual = fase2()
 
         elif self.fase_atual == 3:
-            print("fase 3")
+            self.fase_atual = fase3()
+
+        elif self.fase_atual == 4:
+            print("final")
 
     def sair(self):
         for event in pygame.event.get():

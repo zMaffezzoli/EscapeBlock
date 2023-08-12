@@ -9,8 +9,8 @@ from groups import *
 
 jogador = Jogador(35, 230, 2)
 
-#objetivo = Objetivo(575, 420, 2)
-objetivo = Objetivo(35, 270, 2)
+objetivo = Objetivo(575, 420, 2)
+#objetivo = Objetivo(35, 270, 2)
 
 hud = Plataforma(0, 0, 640, 50, (25,25,25))
 plataforma_direita = Plataforma(-1, 0, 1, 480, PRETO)

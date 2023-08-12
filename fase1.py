@@ -7,8 +7,8 @@ from plataforma import *
 from groups import *
 from funcoes import adicionar, gerar_texto
 
-#jogador = Jogador(30, 420, 1)
-jogador = Jogador(577, 61, 1)
+jogador = Jogador(30, 420, 1)
+#jogador = Jogador(577, 61, 1)
 jogador_group.add(jogador)
 
 objetivo = Objetivo(580, 100, 1)
