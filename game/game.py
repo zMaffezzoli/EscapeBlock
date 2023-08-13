@@ -8,7 +8,7 @@ from final import *
 class Game:
     def __init__(self):
         pygame.init()
-        pygame.mixer.music.load('./assets/sound/beat_music.mp3')
+        pygame.mixer.music.load('./game/assets/sound/beat_music.mp3')
         pygame.mixer.music.play(-1)
         
         self.run = True

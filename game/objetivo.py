@@ -41,7 +41,7 @@ class Objetivo(pygame.sprite.Sprite):
 
         venceu = pygame.sprite.spritecollide(self, jogador_group, True)
         if venceu:
-            colisao = pygame.mixer.Sound('./assets/sound/objective.wav')
+            colisao = pygame.mixer.Sound('./game/assets/sound/objective.wav')
 
             plataforma_group.empty()
             objetivo_group.empty()

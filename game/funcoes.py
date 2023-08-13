@@ -6,6 +6,6 @@ def adicionar(objetos, group):
         group.add(x)
 
 def gerar_texto(texto, cor, x, y, tamanho):
-    font = pygame.font.Font("./assets/font/8-bit_font.ttf", tamanho)
+    font = pygame.font.Font("./game/assets/font/8-bit_font.ttf", tamanho)
     img = font.render(texto, False, cor)
     tela.blit(img, (x, y))
