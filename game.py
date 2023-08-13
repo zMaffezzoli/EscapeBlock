@@ -3,10 +3,14 @@ import pygame
 from fase1 import *
 from fase2 import *
 from fase3 import *
+from final import *
 
 class Game:
     def __init__(self):
         pygame.init()
+        pygame.mixer.music.load('./assets/sound/beat_music.mp3')
+        pygame.mixer.music.play(-1)
+        
         self.run = True
         self.fase_atual = 1
 
@@ -21,7 +25,7 @@ class Game:
             self.fase_atual = fase3()
 
         elif self.fase_atual == 4:
-            print("final")
+            final()
 
     def sair(self):
         for event in pygame.event.get():

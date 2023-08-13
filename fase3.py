@@ -37,7 +37,9 @@ def fase3():
     gerar_texto("Anteontem era quarta, há 17 dias era?", BRANCO, 100, 10, 12)
     
     gerar_texto("Domingo", BRANCO, 105, 185, 12)
+
     gerar_texto("Quarta", BRANCO, 295, 185, 12)
+
     gerar_texto("Terça", BRANCO, 485, 185, 12)
 
     return jogador.fase_atual

@@ -1,12 +1,13 @@
 import pygame
 
+from constantes import *
 from groups import *
 
 class Objetivo(pygame.sprite.Sprite):
     def __init__(self, x, y, fase_atual):
         super().__init__()
         self.image = pygame.Surface((30, 40))
-        self.image_color = self.image.fill((0, 0, 255))
+        self.image_color = self.image.fill(AZUL)
         self.rect = self.image.get_rect(topleft=(x, y))
         self.fase_atual = fase_atual
 
@@ -40,8 +41,10 @@ class Objetivo(pygame.sprite.Sprite):
 
         venceu = pygame.sprite.spritecollide(self, jogador_group, True)
         if venceu:
+            colisao = pygame.mixer.Sound('./assets/sound/objective.wav')
+
             plataforma_group.empty()
             objetivo_group.empty()
             jogador_group.empty()
-
+            colisao.play()
             self.fase_atual += 1
