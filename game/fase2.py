@@ -32,7 +32,7 @@ l13 = Plataforma(100, 111, 1, 62, PRETO)
 l14 = Plataforma(100, 357, 1, 62, PRETO)
 mapa = [hud, plataforma_direita, plataforma_esquerda, plataforma_baixo, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14]
 
-def fase2():
+def fase2(tempo):
      
      adicionar(mapa, plataforma_group)
      plataforma_group.draw(tela)
@@ -46,6 +46,6 @@ def fase2():
 
      gerar_texto("Level 2", AMARELO, 251, 30, 20)
 
-     gerar_texto("Nao seGuimos PadRoes", BRANCO, 200, 10, 12)
+     gerar_texto(f"Nao seGuimos PadRoes          {tempo}", BRANCO, 200, 10, 12)
 
      return objetivo.fase_atual

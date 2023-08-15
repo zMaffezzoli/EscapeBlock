@@ -48,7 +48,7 @@ mapa = [hud, plataforma_direita, plataforma_esquerda, plataforma_baixo, l1, l2, 
 
 adicionar(mapa, plataforma_group)
 
-def fase1():
+def fase1(tempo):
 
     jogador_group.draw(tela)
 
@@ -58,7 +58,7 @@ def fase1():
 
     gerar_texto("Level 1", AMARELO, 251, 30, 20)
     
-    gerar_texto("Corra, mas não veja", BRANCO, 200, 10, 12)
+    gerar_texto(f"Corra, mas não veja           {tempo}", BRANCO, 200, 10, 12)
 
     jogador_group.update()
 

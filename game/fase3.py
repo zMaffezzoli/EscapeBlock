@@ -20,7 +20,7 @@ r2 = Plataforma(316, 200, 30, 40, AZUL)
 
 mapa = [hud, plataforma_direita, plataforma_esquerda, plataforma_baixo, r1, r2]
 
-def fase3():
+def fase3(tempo):
 
     adicionar(mapa, plataforma_group)
     plataforma_group.draw(tela)
@@ -33,7 +33,7 @@ def fase3():
     objetivo_group.draw(tela)
 
     gerar_texto("Level 3", AMARELO, 251, 30, 20)
-    gerar_texto("Anteontem era quarta, há 17 dias era?", BRANCO, 100, 10, 12)
+    gerar_texto(f"Anteontem era quarta, há 17 dias era? {tempo}", BRANCO, 100, 10, 12)
     gerar_texto("Domingo         Quarta          Terça", BRANCO, 105, 185, 12)
 
     return jogador.fase_atual
