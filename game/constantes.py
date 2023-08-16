@@ -5,7 +5,7 @@ LARGURA = 640
 ALTURA = 480
 
 #Definindo tela
-tela = pygame.display.set_mode((LARGURA, ALTURA))
+TELA = pygame.display.set_mode((LARGURA, ALTURA))
 
 #Definindo título do jogo
 TITULO_JOGO = "EscapeBlock"
@@ -13,7 +13,7 @@ pygame.display.set_caption(TITULO_JOGO)
 
 #Definindo FPS do jogo
 FPS = 60
-clock = pygame.time.Clock()
+CLOCK = pygame.time.Clock()
 
 #Cores
 CINZA = (2, 2, 2)

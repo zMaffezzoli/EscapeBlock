@@ -35,13 +35,13 @@ mapa = [hud, plataforma_direita, plataforma_esquerda, plataforma_baixo, l1, l2, 
 def fase2(tempo):
      
      adicionar(mapa, plataforma_group)
-     plataforma_group.draw(tela)
+     plataforma_group.draw(TELA)
 
      jogador_group.add(jogador)
-     jogador_group.draw(tela)
+     jogador_group.draw(TELA)
 
      objetivo_group.add(objetivo)
-     objetivo_group.draw(tela)
+     objetivo_group.draw(TELA)
      objetivo_group.update()
 
      gerar_texto("Level 2", AMARELO, 251, 30, 20)

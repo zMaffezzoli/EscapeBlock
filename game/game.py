@@ -41,9 +41,9 @@ class Game:
 
     def update(self):
         
-        clock.tick(FPS)
+        CLOCK.tick(FPS)
         
-        tela.fill("black")
+        TELA.fill("black")
 
         self.fases()
         self.salvar_tempo()

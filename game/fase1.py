@@ -50,11 +50,11 @@ adicionar(mapa, plataforma_group)
 
 def fase1(tempo):
 
-    jogador_group.draw(tela)
+    jogador_group.draw(TELA)
 
-    plataforma_group.draw(tela)
+    plataforma_group.draw(TELA)
 
-    objetivo_group.draw(tela)
+    objetivo_group.draw(TELA)
 
     gerar_texto("Level 1", AMARELO, 251, 30, 20)
     

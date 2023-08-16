@@ -1,5 +1,5 @@
 import pygame
-from constantes import tela
+from constantes import TELA
 
 def adicionar(objetos, group):
     for x in objetos:
@@ -8,4 +8,4 @@ def adicionar(objetos, group):
 def gerar_texto(texto, cor, x, y, tamanho):
     font = pygame.font.Font("./game/assets/font/8-bit_font.ttf", tamanho)
     img = font.render(texto, False, cor)
-    tela.blit(img, (x, y))
+    TELA.blit(img, (x, y))
