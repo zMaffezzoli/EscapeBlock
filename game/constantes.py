@@ -22,5 +22,3 @@ AMARELO = (255, 215, 0)
 BRANCO = (200, 200, 200)
 VERDE = (0, 80, 0)
 AZUL = (0, 0, 255)
-
-PLAYER = ""

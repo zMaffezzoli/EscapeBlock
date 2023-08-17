@@ -28,10 +28,14 @@ class Game:
             self.fase_atual = fase3(self.tempo)
 
         elif self.fase_atual == 4:
-            final(self.tempo)
+            #adicioanr no banco de dados
+            self.fase_atual += 1
+
+        elif self.fase_atual == 5:
+            self.fase_atual = final(self.tempo)
 
     def salvar_tempo(self):
-        if self.fase_atual != 4:
+        if self.fase_atual != 4 and self.fase_atual != 5:
             self.tempo = self.cronometro.obter_tempo()
 
     def sair(self):
@@ -45,9 +49,9 @@ class Game:
         
         TELA.fill("black")
 
+        self.sair()
+
         self.fases()
         self.salvar_tempo()
-
-        self.sair()
 
         pygame.display.flip()

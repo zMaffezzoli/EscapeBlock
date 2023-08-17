@@ -35,5 +35,5 @@ def fase3(tempo):
     gerar_texto("Level 3", AMARELO, 251, 30, 20)
     gerar_texto(f"Anteontem era quarta, há 17 dias era? {tempo}", BRANCO, 100, 10, 12)
     gerar_texto("Domingo         Quarta          Terça", BRANCO, 105, 185, 12)
-
+    
     return jogador.fase_atual
