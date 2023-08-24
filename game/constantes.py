@@ -16,9 +16,12 @@ FPS = 60
 CLOCK = pygame.time.Clock()
 
 #Cores
-CINZA = (2, 2, 2)
+CINZA = (4, 4, 4)
 PRETO = (0, 0, 0)
 AMARELO = (255, 215, 0)
 BRANCO = (200, 200, 200)
 VERDE = (0, 80, 0)
 AZUL = (0, 0, 255)
+
+#Definindo URL para enviar o tempo
+URL = "http://localhost:5000/incluir/Jogada"

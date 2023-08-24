@@ -14,7 +14,7 @@ def incluir(classe):
 
         db.session.add(nova)
         db.session.commit()
-        resposta = jsonify({"resultado": "ok"})
+        resposta = jsonify({"resultado": "Tempo adicionado!"})
 
     except Exception as error:
         resposta = jsonify({"resultado": "Erro!", "detalhes": str(error)})

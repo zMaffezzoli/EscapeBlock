@@ -1,4 +1,5 @@
 import pygame
+import requests
 
 from fase1 import *
 from fase2 import *
@@ -28,7 +29,10 @@ class Game:
             self.fase_atual = fase3(self.tempo)
 
         elif self.fase_atual == 4:
-            #adicioanr no banco de dados
+            data = {"tempo": self.tempo}
+            send_data = requests.post(URL, json = data)
+            print(send_data.text)
+
             self.fase_atual += 1
 
         elif self.fase_atual == 5:
