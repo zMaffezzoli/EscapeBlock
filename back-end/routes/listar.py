@@ -19,7 +19,7 @@ def listar(classe):
         resposta = {"resultado": "ok", "detalhes": dados_json}
         
     elif dados == []:
-        resposta = jsonify({"resultado": "Erro!", "detalhes": "Sem dados"})
+        resposta = jsonify({"resultado": "Erro!", "detalhes": " Sem dados"})
     
     else:
         resposta = jsonify({"resultado": "Erro!", "detalhes": "Classe informada inválida: "+classe})
