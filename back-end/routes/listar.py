@@ -16,7 +16,8 @@ def listar(classe):
         for d in dados:
             dados_json.append(d.json())
 
-        resposta = {"resultado": "ok", "detalhes": dados_json}
+        dados_ordenados = sorted(dados_json, key=lambda d: d['tempo'])
+        resposta = {"resultado": "ok", "detalhes": dados_ordenados}
         
     elif dados == []:
         resposta = jsonify({"resultado": "Erro!", "detalhes": " Sem dados"})
