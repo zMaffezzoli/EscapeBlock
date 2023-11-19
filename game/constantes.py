@@ -23,7 +23,7 @@ imagem = os.path.join(pasta, "background.png")
 background = pygame.image.load(imagem)
 
 #Cores
-CINZA = (4, 4, 4)
+TRANSPARENTE = (0, 0, 0, 10)
 PRETO = (0, 0, 0)
 AMARELO = (255, 215, 0)
 BRANCO = (200, 200, 200)

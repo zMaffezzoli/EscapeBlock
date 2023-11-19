@@ -24,12 +24,12 @@ l5 = Plataforma(100, 173, 100, 61, VERDE)
 l6 = Plataforma(100, 296, 100, 61, VERDE)
 l7 = Plataforma(285, 173, 70, 61, VERDE)
 l8 = Plataforma(285, 296, 70, 61, VERDE)
-l9 = Plataforma(440, 234, 1, 62, PRETO)
-l10 = Plataforma(440, 357, 1, 62, PRETO)
-l11 = Plataforma(285, 234, 1, 62, PRETO)
-l12 = Plataforma(285, 111, 1, 62, PRETO)
-l13 = Plataforma(100, 111, 1, 62, PRETO)
-l14 = Plataforma(100, 357, 1, 62, PRETO)
+l9 = Plataforma(440, 234, 1, 62, TRANSPARENTE)
+l10 = Plataforma(440, 357, 1, 62, TRANSPARENTE)
+l11 = Plataforma(285, 234, 1, 62, TRANSPARENTE)
+l12 = Plataforma(285, 111, 1, 62, TRANSPARENTE)
+l13 = Plataforma(100, 111, 1, 62, TRANSPARENTE)
+l14 = Plataforma(100, 357, 1, 62, TRANSPARENTE)
 mapa = [hud, plataforma_direita, plataforma_esquerda, plataforma_baixo, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14]
 
 def fase2(tempo):
