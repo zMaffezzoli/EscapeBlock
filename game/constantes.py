@@ -1,4 +1,5 @@
 import pygame
+import os
 
 #Dimensões da tela
 LARGURA = 640
@@ -14,6 +15,12 @@ pygame.display.set_caption(TITULO_JOGO)
 #Definindo FPS do jogo
 FPS = 60
 CLOCK = pygame.time.Clock()
+
+#Fundo
+arquivo = os.path.dirname(os.path.abspath(__file__))
+pasta = os.path.join(arquivo, "img/")
+imagem = os.path.join(pasta, "background.png")
+background = pygame.image.load(imagem)
 
 #Cores
 CINZA = (4, 4, 4)

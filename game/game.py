@@ -50,9 +50,11 @@ class Game:
     def update(self):
         
         CLOCK.tick(FPS)
+        print(CLOCK)
         
-        TELA.fill("black")
 
+        #Tamanho recomendado para fundo (640x429)
+        TELA.blit(background, (0, 51))
         self.sair()
 
         self.fases()
