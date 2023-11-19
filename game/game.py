@@ -53,8 +53,8 @@ class Game:
         print(CLOCK)
         
 
-        #Tamanho recomendado para fundo (640x429)
-        TELA.blit(background, (0, 51))
+        #Tamanho recomendado para fundo (640x430)
+        TELA.blit(background, (0, 50))
         self.sair()
 
         self.fases()
