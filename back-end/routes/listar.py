@@ -1,7 +1,6 @@
 from configs.config import *
 from models.jogada import *
 
-
 # curl localhost:5000/listar/Jogada
 @app.route("/listar/<string:classe>")
 def listar(classe):

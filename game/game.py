@@ -52,7 +52,6 @@ class Game:
         CLOCK.tick(FPS)
         print(CLOCK)
         
-
         #Tamanho recomendado para fundo (640x430)
         TELA.fill("black")
         TELA.blit(background, (0, 50))
