@@ -1,8 +1,8 @@
 from configs.config import *
 
-# curl -i -X POST -F files=@foto.jpeg localhost:5000/save_file
-@app.route("/save_file", methods=["post"])
-def save_file():
+# curl -i -X POST -F files=@foto.jpeg localhost:5000/salvar_img
+@app.route("/salvar_img", methods=["post"])
+def salvar_img():
 
     try:
         file = request.files["files"]
