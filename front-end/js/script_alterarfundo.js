@@ -13,7 +13,7 @@ $(function () {
             processData: false,
             success: function (data) {
                 if (data.resultado == "ok"){
-                    alert(data.resultado + data.detalhes);
+                    alert(data.resultado + " " + data.detalhes);
                 }else{
                     alert(data.resultado + data.detalhes);    
                 };

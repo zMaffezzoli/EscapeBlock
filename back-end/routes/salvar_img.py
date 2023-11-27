@@ -11,6 +11,6 @@ def salvar_img():
         resposta = jsonify({"resultado":"ok", "detalhes": "Imagem salva"})
 
     except Exception as erro:
-        resposta = jsonify({"resposta": "Erro!", "detalhes": str(erro)})
+        resposta = jsonify({"resposta": "Erro! ", "detalhes": str(erro)})
 
     return resposta
