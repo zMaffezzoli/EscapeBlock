@@ -4,9 +4,6 @@ $(function () {
 
         var imagem = new FormData($('#formulario')[0]);
 
-        //var imagem = $("#imagem").val();
-        console.log(imagem)
-
         $.ajax({
             url: 'http://localhost:5000/salvar_img',
             method: 'POST',
@@ -15,10 +12,14 @@ $(function () {
             cache: false,
             processData: false,
             success: function (data) {
-                alert("Enviou a imagem direitinho!");
+                if (data.resultado == "ok"){
+                    alert(data.resultado + data.detalhes);
+                }else{
+                    alert(data.resultado + data.detalhes);    
+                };
             },
             error: function (data) {
-                alert("Não foi possível enviar a imagem");
+                alert("Não foi possível enviar a imagem, back-end indisponível");
             }
         });
     });
